@@ -32,17 +32,10 @@
                 <p class="md:text-base sm:text-sm text-xs font-semibold p-5 pb-2">Done</p>
                 <hr class="bg-black h-1">
                 <div class="p-5">
-                    <div class="flex justify-between items-center border-b border-black">
+                    <div class="flex justify-between items-center p-2 bg-white rounded-lg shadow-md my-2 cursor-pointer">
                         <p class="md:text-sm text-xs font-semibold flex-1">Task 1</p>
 
-                        <div class="relative">
-                            <button id="option-btn" onclick="taskOption(1)" class="md:text-xl sm:text-lg text-base">...</button>
-                            <ul id="task-options-1"
-                                class="transition-all duration-300 bg-gray-300 hidden rounded-md p-2 space-y-1 absolute">
-                                <li class="md:text-xs text-[10px] p-1 rounded bg-green-500 text-white">Edit</li>
-                                <li class="md:text-xs text-[10px] p-1 rounded bg-red-500 text-white">Delete</li>
-                            </ul>
-                        </div>
+                        <button><i class="fa-solid fa-trash"></i></button>
                     </div>
                 </div>
             </div>
@@ -52,20 +45,6 @@
 
 @section('scripts')
     <script>
-        const optionList = document.querySelector('#task-options-1');
-
-        document.addEventListener('click', function(event) {
-            if (optionList.style.display === 'block' && event.target.id !== 'option-btn') {
-                optionList.style.display = 'none';
-            }
-        });
-
-        function taskOption(id) {
-            if (optionList.style.display === 'block') {
-                optionList.style.display = 'none';
-            } else {
-                optionList.style.display = 'block';
-            }
-        }
+     
     </script>
 @endsection
