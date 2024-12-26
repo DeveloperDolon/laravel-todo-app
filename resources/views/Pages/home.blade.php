@@ -22,7 +22,9 @@
             </div>
 
             <div class="bg-[#85dcff] rounded-lg shadow-lg ">
-                <p class="md:text-base sm:text-sm text-xs font-semibold p-5 pb-2">In Progress</p>
+                <p class="md:text-base sm:text-sm text-xs font-semibold p-5 pb-2">
+                    In Progress
+                </p>
                 <hr class="bg-black h-1">
                 <div class="p-5">
                 </div>
@@ -33,7 +35,13 @@
                 <hr class="bg-black h-1">
                 <div class="p-5">
                     <div class="flex justify-between items-center p-2 bg-white rounded-lg shadow-md my-2 cursor-pointer">
-                        <p class="md:text-sm text-xs font-semibold flex-1">Task 1</p>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-regular fa-circle-dot text-green-500"></i>
+
+                            <p class="md:text-sm text-xs font-semibold flex-1">
+                                Go to market and take something.
+                            </p>
+                        </div>
 
                         <button><i class="fa-solid fa-trash"></i></button>
                     </div>
@@ -44,7 +52,5 @@
 @endsection
 
 @section('scripts')
-    <script>
-     
-    </script>
+    <script></script>
 @endsection
